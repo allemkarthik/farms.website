@@ -139,8 +139,12 @@ header{
     height: 50vh;
     /* border: 1px solid red; */
     padding: 5%;
+    transition: all 1s;
     
-    
+}
+
+.sec2-images:hover{
+    transform: rotate(90deg);
 }
 
 /* mobile */

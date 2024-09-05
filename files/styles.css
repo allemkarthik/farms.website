@@ -23,7 +23,9 @@ header{
     padding: 0.5rem;
     border-radius: 0.625rem;
     /* border: 2px solid greenyellow; */
-          
+    animation-name: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
 
     
 }
@@ -161,17 +163,26 @@ header{
     padding: 5%;
     
     
+    
+    
 }
+.boxes:hover{
+    animation-name: animate__flash;
+    animation-duration: 2s;
+}
+
+
 .boxes{
     border: 1px solid black;
     padding: 15%;
     margin: 5%;
     border-radius: 1rem;
-    /* margin-top: 10%;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-bottom: 10%; */
-    /* text-align: center; */
+    animation-timing-function: ease-out;
+    
+    
+    
+    
+    
     
 }
 .icon-container1,.icon-container2,.icon-container3{
@@ -188,6 +199,8 @@ header{
 .boxes:hover{
     background-color: rgb(10, 10, 41);
     color: white;
+    
+
 }
 
 /* mobile view */
@@ -235,30 +248,31 @@ header{
 .uday{
     background-image: url(../media/Organic_Farm_4.webp);
     width: 100%;
-    height: 75vh;
+    height: 80vh;
     background-size: cover;
 }
 .sec3-content{
   /* border: 1px  solid red; */
-  width: 25%;
-  height: 75vh;
+  width: 30%;
+  height: 80vh;
   font-weight: 600;
-  margin: 2%;
+  /* margin: 2%;     */
   /* background-color: beige; */
   text-align: justify;
   color: rgb(81, 1, 1);
   padding: 1%;
-  padding-top: 5%;
+  padding-top: 3%;
   font-size: 1rem;
 }
 .para-sec3-3{
-    border: 2px solid red;
+    border: 2px solid rgb(34, 3, 3);
     text-align: center;
-    width: 40%;
+    width: 70%;
     padding: 2%;
-    margin-left: 30%;
+    margin-left: 13%;
     background-color: #4caf50;
     border-radius: 10px;
+    overflow: hidden;
     
     
 
@@ -274,7 +288,7 @@ header{
     .uday{
         /* background-image: url(Organic_Farm_4.webp); */
         width:100%;
-        height: 40vh;
+        height: 50vh;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -282,7 +296,7 @@ header{
     }
     .sec3-content{
         width: 50%;
-        height: 40vh;
+        height: 50vh;
         padding: 1%;
         padding-top: 5%; 
         color: rgb(81, 1, 1);   
@@ -305,7 +319,7 @@ header{
     .uday{
         /* background-image: url(Organic_Farm_4.webp); */
         width:100%;
-        height: 80vh;
+        height: 85vh;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -313,9 +327,9 @@ header{
     }
     .sec3-content{
         width: 50%;
-        height: 80vh;
-        padding: 1%;
-        padding-top: 5%; 
+        height: 85vh;
+        /* padding: 1%; */
+        /* padding-top: 5%;  */
         color: rgb(81, 1, 1);   
        
     }
@@ -345,6 +359,11 @@ header{
     text-align: center;
     padding: 4%;
 
+}
+
+.sec4-content:hover{
+    animation-name: animate__backInDown;
+    animation-duration: 2s;
 }
 .para-sec4{
     font-size: 3rem;
@@ -411,6 +430,11 @@ header{
     /* box-shadow: 5px 5px 5px 1px black; */
 
 }
+.card1:hover{
+    animation-name: animate__shakeY;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
 .sec5-image{
     /* width: auto; */
     width: 100%;
@@ -441,7 +465,8 @@ header{
 .card-2-butn{
     border-radius: 10px;
     /* border: 1px solid red; */
-    background-color: white;
+    background-color: grey;
+    color: black;
     padding: 2%;
     font-size: 1.5rem;
     font-weight: 400;
@@ -453,6 +478,7 @@ a{
 }
 .card1:hover .card2{
     top: 50%;
+    /* color: black; */
 }
 .card-2-butn:hover{
     background-color: #4caf50;
@@ -465,7 +491,7 @@ a{
         display: grid;
         grid-template-columns: auto;
         margin: 0;
-        padding: 0;
+        padding: 2%;
         width: 100%;
         
        
@@ -619,6 +645,11 @@ a{
     background-position: center;
     background-repeat: no-repeat;
     box-shadow: 5px 5px 5px 1px black;
+    transition: all 5s;
+}
+.sec8-content-images1:hover{
+    transform: rotate(360deg);
+
 }
 .sec8-content-botton{
     border-radius: 30px;
